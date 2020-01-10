@@ -3,7 +3,7 @@
 
 Name:           mingw32-nsis
 Version:        2.46
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Nullsoft Scriptable Install System
 
 
@@ -91,6 +91,10 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Mon Aug 22 2011 Kai Tietz <ktietz@redhat.com>
+- Adjusted version and rebuild using gcc 4.4.6
+  Related: rhbz#722878
+
 * Wed Dec 22 2010 Andrew Beekhof <abeekhof@redhat.com> - 2.46-2
 - Bump the revision to avoid tag collision
    Related: rhbz#658833
